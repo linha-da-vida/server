@@ -8,4 +8,6 @@ app.get('/GCP_API', (req, res) => {
 	res.status(200).json({ msg: process.env.SECRET_MSG });
 });
 
-app.listen(3000, () => console.log('uber-ui-clone-backend'));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log('Server started at port ' + PORT));
