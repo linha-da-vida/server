@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/GCP_API', (req, res) => {
 	res.status(200).json({ msg: process.env.SECRET_MSG });
 });
 
